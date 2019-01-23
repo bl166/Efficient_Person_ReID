@@ -1,6 +1,9 @@
 
 # Efficient Person Re-ID
-This repo contains implementation of pruning ResNet and DenseNet for the efficient person re-ID problem. 
+This repo contains implementation of pruning ResNet and DenseNet for the efficient person re-ID problem. Code adapted from 
+1. Basic ReID - https://github.com/layumi/Person_reID_baseline_pytorch
+2. Channel Pruning - https://github.com/Eric-mingjie/network-slimming
+3. Quantization - https://github.com/aaron-xichen/pytorch-playground
 
 ## 0. Dataset preparation
 Download re-ID datasets and run **./prep_dataset.py** with the following line changed to your download path. ***Naming rule: must include "market" if it is the Market dataset, "duke" if DukeMTMC dataset, exclusive.***
