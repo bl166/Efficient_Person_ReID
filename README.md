@@ -154,7 +154,7 @@ With 20 epochs (far less than 160 which we did for the initial training), we hav
 1. Visualizing sparsity in each convolutional layer (DenseNet-121)
 <img src="https://i.postimg.cc/4yYSWjZD/prune-den-vis-sparsity.png" width="750" height="250" dpi="30">
 For sparsity from 0, 0.1, 0.2, ... linearly to 0.9, overlay a bar denoting the number of channels in each layer. After 10 iterations on different sparsities, the color intensity of each layer will indicate the "importance" of it. It intuitively shows that bottleneck layers and the final layer in each dense block are valued more than the others.
-
+\
 2. Prediction accuracy vs pruning sparsity (DenseNet-121, Market Dataset)
 <img src="https://i.postimg.cc/Y0TyZ8Ch/prune-den-acc-vs-sparsity.png" width="750" height="250" dpi="30">
 The white bars denote the classification of the identity classifier, colored bars the accuracy of post-finetuned re-ID, significantly higher than pre-finetuned performance which are in grey especially for higher sparsities. This shows that with proper finetuning, we can safely compress ~70% channels in DenseNet-121 while maintaining re-ID performance!
